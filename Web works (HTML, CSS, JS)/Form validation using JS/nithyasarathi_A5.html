@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Eshwar Conference Registration Form</title>
+    <link rel="stylesheet" href="MyStyle.css">
+
+</head>
+<body style="font-family: bahnschrift, sans-serif;font-size: large;">
+    <center><br>
+        <h1><b>SRI ESHWAR CONFERENCE<br>REGISTRATION FORM</b></h1><br>
+        <form name="RegForm" onsubmit="return validateForm()" method="get" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <th><label for="name">Name : </label></th>
+                <td><input autofocus name="name" id="name" placeholder="Enter Your Name" required ></td>
+            </tr>
+            <tr>
+                <th><label for="email">Email : </label></th>
+                <td><input name="Email" id="email" type="email" required placeholder="Enter email here"></td>
+            </tr>
+            <tr>
+                <th><label for="code" >Country Code : </label></th>
+                <td><input name="country code" id="code" type="text" maxlength="7" value="+91" required></td>
+            </tr>
+            <tr>
+                <th><label for="num" >Number : </label></th>
+                <td><input name="Number " id="num" type="number" minlength="9" maxlength="10"  placeholder="Mobile Number" required></td>
+            </tr>
+            <tr>
+                <th><label for="Cname">Company Name : </label></th>
+                <td><input  name="Company name" id="Cname" placeholder="Company Name" type="text" maxlength="20" required ></td>
+            </tr>
+            <tr>
+                <th><label for="Jname">Job Title : </label></th>
+                <td><input type="text" name="Job" id="Jname" placeholder="Enter Job Title" required ></td>
+            </tr>
+            <tr>
+                <th><label for="gender">Gender : </label></th>
+                <td><input type="radio" name="gender" id="gender"  required >Male<input type="radio" name="name" id="gender"  required >Female </td>
+            </tr>
+            <tr>
+                <th><label for="age">Age : </label></th>
+                <td><input  name="Age" id="age" placeholder="age" type="number" min="18" max="40" required ></td>
+            </tr>
+            <tr>
+                <th><label for="Country">Country : </label></th>
+                <td>
+                    <select name="country" id="Country" required>
+
+                        <option selected disabled>None</option>
+                        
+                        <option>India</option>
+                        <option>Sri Lanka</option>
+                        <option>Palestine</option>
+                        <option>US</option>
+                        <option>Nepal</option>
+                        <option>UAE</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="city">City : </label></th>
+                <td><select name="city" id="city" required>
+                    <option selected disabled>None</option>
+                    <optgroup label="Metro">
+                        <option>Delhi</option>
+                        <option>Mumbai</option>
+                        <option>Chennai</option>
+                        <option>Cochin</option>
+                        <option>Bangalore</option></option>
+                    <optgroup label="Others">
+                        <option>Coimbatore</option>
+                        <option>Pune</option>
+                        <option>Palghat</option>
+                        
+                        <option>Alapuzha</option> </optgroup>
+                </select></td>
+            </tr>
+            <tr>
+                <th><label for="diet">Dietary Food : </label></th>
+                <td><select name="dieatary" id="diet" required>
+                    <option selected disabled>None</option>
+                    <optgroup label="Veg">
+                        <option>White Rice</option>
+                        <option>Pongal</option>
+                        <option>Veg Biriyani</option>
+                        <option>Poori</option>
+                        <option>Sambhar Sadham</option></option>
+                    <optgroup label="Non-Veg">
+                        <option>Chicken Biriyani</option>
+                        <option>Mandhi Rice</option>
+                        <option>Chicken fried Rice</option>
+                        <option>Grill Chicken</option>
+                        <option>Chicken Shawarma</option> </optgroup>
+                </select></td>
+            </tr>
+           <tr>
+              <th><label for="t shirt">T-shirt size :</label></th>
+              <td>
+                <select id="t shirt" name="T-shirt Size">
+                    <option selected disabled>None</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                </select>
+              </td>
+           </tr>
+           <tr>
+             <th><label for="color" >Prefered color :</label></th>
+             <td><input name="T shirt Color" id="color" type="color"></td>
+           </tr>
+           <tr>
+            <th><label for="SP" >Session Preference :</label></th>
+            <td>
+                <select id="SP" name="Session Preference">
+                  <option selected disabled>None</option>
+                  <option>Session 1</option>
+                  <option>Session 2</option>
+                  <option>Session 3</option>
+                </select>
+            </td>
+          </tr>
+          <tr>
+            <th><label for="workshop">WorkShop Preference :</label></th>
+            <td><select name="WorkShop" id="workshop" required>
+                <option selected disabled>None</option>
+                <option>Web Designing</option>
+                <option>Full Stack development</option>
+                <option>Cyber Security</option>
+            </select></td>
+          </tr>
+          <tr>
+            <th><label for="date">Preferred Date :</label></th>
+            <td><input name="Date" id="date" type="date" min="2023-10-13" max="2023-10-15"></td>
+          </tr>
+          <tr>
+            <th><label for="Guest">Will you bring a guest :</label></th>
+            <td><input type="radio" name="Guest" id="Guest" required>Yes<input type="radio" name="Guest" id="Guest" required>No</td>
+          </tr>
+          <tr>
+            <th><label for="GN">Guest Name :</label></th>
+            <td><input name="Guest Name" id="GN" type="text" placeholder="Guest Name "></td>
+          </tr>
+          <tr>
+            <th><label for="diet">Guest Dieatary Food : </label></th>
+            <td><select name="diet" id="diet" required>
+                <option selected disabled>None</option>
+                <optgroup label="Veg">
+                    <option>White Rice</option>
+                    <option>Pongal</option>
+                    <option>Veg Biriyani</option>
+                    <option>Puri</option>
+                    <option>Sambhar Sadham</option></option>
+                <optgroup label="Non-Veg">
+                    <option>Chicken Biriyani</option>
+                    <option>Mandhi Rice</option>
+                    <option>Chicken fried Rice</option>
+                    <option>Grill Chicken</option>
+                    <option>Chicken Shawarma</option> </optgroup>
+            </select></td>
+        </tr>
+        <tr>
+            <th><label for="pay">Prefered payment Method :</label></th>
+            <td><input id="pay" name="Payment Method" type="radio" required>Credit Card<input id="pay" name="Payment Method" type="radio" required>Debit Card</td>
+        </tr>
+        <tr>
+            <th><label for="cn">Card Number :</label></th>
+            <td><input name="Card Number" type="password" id="cn" minlength="16" maxlength="16"></td>
+        </tr>
+        <tr>
+            <th><label for="expiryDate">Enter Debit Card Expiry Date (MM/YY):</label>
+               <td><input type="text" id="expiryDate" name="expiryDate" pattern="\d{2}/\d{2}" placeholder="MM/YY" required></td>
+        </tr>
+        <tr>
+            <th><label for="cvv">Card CVV : </label>:</label>
+               <td><input type="number" id="cvv" name="CVV"  placeholder="Enter Card CVV" minlength="3" maxlength="3" required></td>
+        </tr>
+        <tr>
+            <th><label for="Address">Bill Address :</label></th>
+            <td><textarea name="Bill Address" id="Address" required>Enter your address</textarea></td>
+        </tr>
+        <tr>
+            <th><label for="how">How did you heared about us : </label></th>
+            <td><select name="Heared  in " id="how" required>
+                <option selected disabled>None</option>
+                <option>Friends,Family</option>
+                <option>College</option>
+                <option>Youtube</option>
+                <option>LinkedIn</option>
+                <option>Other</option>
+            </select></td>
+        </tr>
+        <tr>
+            <th><label for="id">Upload photo for ID card :</label></th>
+            <td><Input name="Photo" id="id" type="file" accept=".jpg" required></td>
+        </tr>
+        <tr>
+            <th><label for="ids">Upload profile :</label></th>
+            <td><Input name="Profile" id="ids" type="file" accept=".pdf" required></td>
+        </tr>
+        <tr>
+            <th><label for="comments">Additional comments :</label></th>
+            <td><textarea required>Type your comments here</textarea></td>
+        </tr>
+        </table>
+        <br>
+</form>
+    <table>
+        <tr>
+            <td><b><input type="submit" name="submit" style="background-color: deepskyblue;border-radius: 25px;height: 50px;width:150px" value="submit" onclick="validateForm()"></b> <b><input type="reset" value="reset" style="background-color: deepskyblue;border-radius: 25px;height: 50px;width:150px" value="reset"></input></b></td>
+        </tr>
+    </table><br>
+        <hr>
+        <footer><center style="background-color: black;color: aliceblue;padding-top: 20px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size:xx-small;height: 40px;">assigned by<br>Nithyasarathi.M</center></footer>
+</center> 
+</body>
+<script type="text/javascript" src="validation.js"></script>
+</html>
